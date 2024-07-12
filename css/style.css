@@ -1,0 +1,72 @@
+/* utilisation du sélecteur universel, initialisation des marges à 0 (haut, bas, gauche, droite) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* couleur du fond de la fenêtre */
+    background-color: #29347B;
+}
+
+header {
+    background-color: #29347B;
+    /* On met le texte (qui est dans h1) au centre */
+    display: flex;
+    justify-content: center;
+    /* le texte au milieu également */
+    text-align: center;
+}
+
+h1 {
+    /* utilisation de la police que l'on a ajouté */
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* couleur texte: blanc */
+    color: #ffffff;
+    /* redimensionnement du texte (même si c'est pas si important) */
+    font-size: 80px;
+}
+
+p {
+    /* même principe que pour h1 */
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/* Les 3 chats du haut */
+.chatshaut {
+    display: flex;
+    /* on ajoute un espace égal entre les images */
+    justify-content: space-between;
+    /* on ajoute un espace à gauche et à droite */
+    margin: 10%;
+    /* le texte sera centré sous les images */
+    text-align: center;
+}
+
+/* Les 3 chats du milieu */
+.chatsmilieu {
+    /* même principe que pour les 3 chats du haut */
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+    text-align: center;
+}
+
+/* Les 3 chats du bas */
+.chatsbas {
+    /* même principe que pour les 3 chats du haut */
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+    text-align: center;
+}
+
+/* redimensionnement des images pour que ce soit plus conforme */
+img {
+    width: 280px;
+}
